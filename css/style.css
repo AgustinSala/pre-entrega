@@ -1,0 +1,251 @@
+/*-------------------RESET---------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------HEADER-------------------------*/
+
+
+/*---------------------MAIN------------------------*/
+
+.hero{
+    width: 100%;
+    height: 80vh;
+    background-image: url("../img/estetica-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.hero h2{
+    font-size: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.hero p{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT',Arial, Helvetica, sans-serif, 'Trebuchet MS', sans-serif;
+    margin: 10px;
+    text-align: center;
+
+}
+.informacion{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.informacion img{
+    width: 100%;
+    height: 400px;
+}
+
+.informacion div{
+    width: 100%;
+    margin: 50px;
+}
+
+.informacion div h2{
+    font-size: 40px;
+
+}
+
+.informacion div p{
+    font-size: 25px;
+
+}
+
+.productos-contenedor{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productos h2{
+    text-align: center;
+    background-color: beige;
+    font-size: 40px;
+
+}
+
+.productos .productos-contenedor div{
+    width: 250px;
+    height: 350px;
+    border: 2px solid black;
+    text-align: center;
+    margin: 5px;
+    box-shadow: 9px 1px 23px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 1px 23px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 1px 23px -4px rgba(0,0,0,0.75);
+
+}
+
+.productos div a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 3px;
+}
+
+.productos div a:hover{
+    background-color:  rgb(31, 19, 169);
+}
+
+.productos div img{
+    width: 250px;
+    height: 250px;
+}
+
+
+.grid-galeria{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-auto-rows: 400px;
+    gap: 15px;
+    box-shadow: 9px 1px 23px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 9px 1px 23px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 1px 23px -4px rgba(0,0,0,0.75);
+
+}
+
+.grid-galeria div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.img-1{
+    grid-column:span 3;
+}
+
+.img-3{
+    grid-row: span 2;
+}
+
+.img-10{
+    grid-column: span 2;
+}
+
+.img-6{
+    grid-row: span 2;
+}
+
+.grid-item{
+    position: relative;
+
+}
+
+.grid-item h3{
+    position: absolute;
+    bottom: 0;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+}
+
+/*---------------------FOOTER------------------------*/
+
+footer{
+    background-color: rgb(109, 101, 101);
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding: 20px;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+
+}
+
+@media screen and (max-width:960px) {
+    .informacion{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .informacion div{
+        width: 80%;
+    }
+    .informacion div p{
+        font-size: 25px;
+        text-align: center;
+    }
+ 
+
+} 
+    
+
+
+ @media screen and (max-width:900px) {
+    .grid-galeria{
+        grid-template-columns:repeat(2,1fr) ;
+        grid-auto-rows: 350px;
+
+    }
+    .grid-item{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .hero h2{
+        font-size: 50px;
+    }
+    .hero p{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width:550px){
+    .hero h2{
+        font-size: 40px;    
+    }
+    
+}
+
+
+@media screen and (max-width:450px) {
+    header nav ul li{
+        margin: 0px;
+    }
+    header h1{
+        font-size: 35px;
+    }
+    .hero h2{
+        font-size: 35px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .grid-galeria{
+        grid-template-columns: 1fr;
+        grid-row:span 1;
+    }
+}
+
+
+    
